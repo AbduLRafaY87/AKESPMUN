@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital@0;1&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap');
+@import "tailwindcss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all .33s ease;
+}
+
+/* AKESPMUN III Style Guide */
+
+/* 🎨 Color Palette */
+:root {
+  --primary-green: #1F3D2B;
+  --accent-gold: #C0A880;
+  --text-white: #FFFFFF;
+  --text-black: #101010;
+  --text-gray: #6C757D;
+  --black: #000000;
+}
+
+/* 🔤 Typography */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+  color: var(--text-black);
+  margin: 0;
+  transition: all .33s ease;
+  padding: 0;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  /* color: var(--text-white); */
+}
+
+.hero{
+  margin-top: 85px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+p {
+  font-family: 'Lora', serif;
+  color: var(--text-gray);
+}
+
+/* Buttons */
+/* .button {
+  background-color: var(--accent-gold);
+  color: var(--black);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+} */
+
+/* .button:hover {
+  background-color: var(--text-white);
+  color: var(--primary-green);
+} */
+
+/* Navigation Bar */
+.navbar {
+  background-color: var(--black);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .navbar a {
+  color: var(--text-white);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+} */
+
+.navbar a:hover {
+  color: var(--accent-gold);
+}
+
+nav ul li a{
+  /* color: var(--text-white) !important; */
+  text-decoration: none;
+  /* margin: 0 15px; */
+  /* font-weight: bold; */
+}
+nav{
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); */
+  /* border-bottom: var(--accent-gold) 1px solid; */
+}
+
+/* Sections */
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+#homeAboutBtn{
+  background-color: var(--primary-green);
+}
+#homeAboutBtn:hover{
+  filter: grayscale(0.9);
+  transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+  background-color: var(--black);
+  text-align: center;
+  /* padding: 20px; */
+  padding-top: 50px;
+  color: var(--text-gray);
+}
